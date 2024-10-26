@@ -4481,9 +4481,12 @@ input[type=search]::-webkit-search-results-decoration {
     width: 100%;
     display: block;
     padding: 21px 40px;
-    background: linear-gradient(45deg, #00F1B5, #D9FF43); }
+    border: 1px solid black;  
+    background-image: linear-gradient(120deg, #8234C5, #230952);
+  }
     .comment_form .btn[type=submit]:before {
-      background-color: var(--bs-primary); }
+      background-image: linear-gradient(120deg, #8234C5, #230952);  
+    }
 
 /* 4.01 - Blog Post Block - End
 ================================================== */
@@ -4570,7 +4573,7 @@ input[type=search]::-webkit-search-results-decoration {
   margin-bottom: 70px; }
 
 .item_details_heading {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 64px;
   margin-bottom: 28px; }
 
@@ -5893,7 +5896,7 @@ Responsive For Mobile & Tablet Devices
     line-height: 44px; }
 
   .item_details_heading {
-    font-size: 46px;
+    font-size: 30px;
     line-height: 58px; }
 
   .other_post_nav a:not(:nth-child(2)) {

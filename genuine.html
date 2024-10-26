@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body styling */
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #8234C5, #230952);
+            color: #FFFFFF;
+        }
+        /* Main container */
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+        /* Heading styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        /* Paragraph styling */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        /* Button styling */
+        .notify-btn {
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #230952;
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        /* Hover effect on button */
+        .notify-btn:hover {
+            background-color: #f0f0f0;
+        }
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We're Coming Soon!</h1>
+        <p>Stay tuned for something amazing. Sign up to be notified when we launch!</p>
+        <button class="notify-btn" style="margin: 10px;">Notify Me</button> <br>  
+        <a href="index.html"> <button class="notify-btn">Go to Homepage</button></a>
+    </div>
+</body>
+</html>
