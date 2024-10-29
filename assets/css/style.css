@@ -376,6 +376,115 @@ mark {
 .ml-10 {
   margin-left: 10px !important; }
 
+  /* Card container */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  /* Individual card styling */
+  .card {
+    flex: 1 1 calc(25% - 20px); /* Four cards per row */
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.288);
+    border-radius: 8px;
+    background-color: none; /* Transparent background */
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Hover effect with gradient background */
+  .card:hover {
+    /* background: linear-gradient(to right, rgba(130, 52, 197, 0.8), rgba(181, 110, 227, 0.8)); */
+
+    color: #fff;
+    transform: translateY(-10px);
+  }
+
+  /* Card heading */
+  .card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+  }
+
+  /* Card paragraph */
+  .card p {
+    color: black;
+    text-align: -webkit-match-parent;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      flex: 1 1 100%; /* Single card per row on small screens */
+    }
+  }
+
+ /* Floating button container styling */
+ .floating-button1 >a{
+  position: fixed;
+  bottom: 200px;
+  /* right: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  
+  background-color: #8234C5;
+  color: white;
+  
+  /* border-radius: 30px; */
+  cursor: pointer;
+  font-size: 16px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+  transition: width 0.3s, background-color 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 50px; /* Initially fits icon */
+  height: 150px; /* Initially fits icon */
+  z-index: 999;
+  
+}
+.floating-button1 .text{
+  transform: rotate(90deg);
+}
+
+   /* Floating button styling */
+   .floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    padding: 15px 20px;
+    background-color: #2ba32d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+
+  /* Hover effect */
+  /* .floating-button:hover {
+    background-color: #0056b3;
+  } */
+
 /* 1.2 - Template Reset - End
 ================================================== */
 .appp_btn .btn {
@@ -454,7 +563,7 @@ mark {
 .backtotop {
   right: 15px;
   z-index: 999;
-  bottom: 60px;
+  bottom: 30px;
   display: none;
   position: fixed; }
   .backtotop .scroll {
@@ -508,6 +617,7 @@ mark {
   gap: 12px; }
 .iconlist_block > li {
   gap: 12px;
+  color: black;
   display: flex;
   font-size: 14px;
   font-weight: 500;
@@ -756,7 +866,8 @@ mark {
 
     .bgg{
       color: white;
-      background-image: linear-gradient(120deg, #8234C5, #230952);
+      /* background-image: linear-gradient(120deg, #8234C5, #230952); */
+      background-color: #8234C5;
 
     }
     .bgg:hover{
@@ -782,7 +893,7 @@ mark {
 /* 2.06 - Typography - Start
 ================================================== */
 .heading_block {
-  margin-bottom: 40px; }
+  margin-bottom: 60px; }
   .heading_block .heading_text {
     font-size: 50px;
     font-weight: 600;
@@ -802,7 +913,7 @@ mark {
     line-height: 32px;
     letter-spacing: -0.2px; }
   .heading_block .badge {
-    margin-bottom: 19px; }
+    margin-bottom: 40px; }
 
 .heading_block.style_2 .heading_text {
   font-size: 55px;
@@ -1377,7 +1488,7 @@ input[type=search]::-webkit-search-results-decoration {
 .payment_methods_section {
   padding: 0 30px; }
   .payment_methods_section .content_wrapper {
-    padding: 30px 15px;
+    padding: 50px 15px;
     border-radius: 30px;
     color: #000000;
     background-image: linear-gradient(120deg, #fff, #fff); }
@@ -1753,7 +1864,7 @@ input[type=search]::-webkit-search-results-decoration {
   position: absolute;
   transition: transform .5s; }
   .site_header .site_logo .site_link {
-    max-width: 122px; }
+    max-width: 170px; }
   .site_header .btns_group {
     gap: 10px; }
     .site_header .btns_group > li:first-child {
@@ -2056,7 +2167,8 @@ input[type=search]::-webkit-search-results-decoration {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  background-image: linear-gradient(120deg, #8234C5, #230952); 
+  /* background-image: linear-gradient(120deg, #8234C5, #230952);  */
+  background-color: #8234C5;
 }
   .footer_layout_1 p {
     color: #C6C6C6; }
@@ -4299,7 +4411,7 @@ input[type=search]::-webkit-search-results-decoration {
   .blog_post_block .btn-link svg path {
     transition: .3s; }
 .blog_post_block .btn-link:hover {
-  color: var(--bs-primary); }
+  color: black }
   .blog_post_block .btn-link:hover svg {
     transform: translateX(5px); }
     .blog_post_block .btn-link:hover svg path {
@@ -5478,6 +5590,7 @@ Responsive For Mobile & Tablet Devices
     line-height: 30px; }
 
   .contact_process_step .iconbox_title {
+    text-align: center;
     font-size: 20px;
     line-height: 30px; }
 
