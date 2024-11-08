@@ -180,6 +180,80 @@ a {
     outline: 0;
     text-decoration: none; }
 
+    /* From Uiverse.io by SteveBloX */ 
+.mmmybutton {
+  width: 150px;
+  height: 60px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+.mmmybutton:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+
+
+/* From Uiverse.io by cssbuttons-io */ 
+.mmyButton {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 11em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #fff;
+  
+  transition: color 0.5s, border-color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.mmyButton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.mmyButton:hover {
+  color: #fff;
+  border-color: var(--color);
+}
+
+.mmyButton:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.mmyButton:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.mmyButton:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+
+
 button {
   padding: 0px;
   border: none;
@@ -872,6 +946,7 @@ mark {
     }
     .bgg:hover{
       color: black;
+      border: 1px solid black;
       background-image: linear-gradient(120deg, #843ec1, #2c0d67);
 
     }
@@ -4680,6 +4755,7 @@ input[type=search]::-webkit-search-results-decoration {
 .item_details_content hr {
   margin: 28px 0; }
 .item_details_content p {
+  text-align: justify;
   font-size: 20px;
   font-weight: 500;
   line-height: 32px;
@@ -6172,6 +6248,11 @@ Responsive For Mobile & Tablet Devices
   .blog_post_block .post_image {
     margin-bottom: 20px; }
 
+  .post_image img{
+    width: 300px;
+    height: 300px;
+  }
+
   .section_space {
     padding: 120px 0; }
 
@@ -6464,8 +6545,8 @@ Responsive For Mobile & Tablet Devices
 ================================================== */
 @media screen and (max-width: 680px) {
   .section_space {
-    padding-top: 100px;
-    padding-bottom: 100px; }
+    padding-top: 50px;
+    padding-bottom: 50px; }
 
   .about_section .shape_lines_flow_1 {
     right: -270px; }
